@@ -1,10 +1,10 @@
-const range = require('./range')
-const rangeHelpers = require('./range-helpers')
+const {
+    createBoundComparisonRule,
+    createBound,
+    createRange} = require('./range')
 
-const createBoundComparisonRule = range.createBoundComparisonRule
-const createBound = range.createBound
-const createRange = range.createRange
-const createRangeHelper = rangeHelpers.createRangeHelper
+const { 
+    createRangeHelper } = require('./range-helpers')
 
 const testMessage = (value, expectedValue) => {
     const details = `value: ${value}, expected: ${expectedValue}`
