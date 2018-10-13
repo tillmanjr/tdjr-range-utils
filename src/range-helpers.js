@@ -1,15 +1,18 @@
 'use strict;'
 
-const range = require('./range')
+const {
+    createBoundComparisonRule,
+    createBound,
+    createRange,
+    BoundComparisonType
+} = require('./range')
 
-const createBoundComparisonRule = range.createBoundComparisonRule
-const createBound = range.createBound
-const createRange = range.createRange
-const BoundComparisonType = range.BoundComparisonType
-
+/**
+ * @fileOverview Helper methods for creating ranges.
+ *  Use these whenever possible instead of the lower level Range functions
+ */
 /* 
-    Helper methods for creating ranges - use these whenever possible
-*/
+
 
 /**
  * Creates a Range with upper and lower bounds
